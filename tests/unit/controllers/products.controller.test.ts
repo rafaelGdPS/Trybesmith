@@ -3,8 +3,8 @@ import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import { Request, Response } from 'express';
 import productMock from '../../mocks/product.mock';
-import productsService from '../../../src/services/products.service';
-import productsController from '../../../src/controllers/products.controller'
+import productsService from '../../../src/service/products.service';
+import productsController from '../../../src/controller/product.controller'
 
 chai.use(sinonChai);
 

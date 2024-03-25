@@ -3,7 +3,7 @@ import sinon from 'sinon';
 
 import productMock from '../../mocks/product.mock'
 import ProductModel from '../../../src/database/models/product.model'
-import productsService from '../../../src/services/products.service';
+import productsService from '../../../src/service/products.service';
 
 describe('ProductsService', function () {
   beforeEach(function () { sinon.restore(); });

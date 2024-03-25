@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import productsService from '../services/products.service';
+import productsService from '../service/products.service';
 import statusCode from '../utils/mapHttp';
 
 async function insertProduct(req: Request, res: Response): Promise<Response> {
