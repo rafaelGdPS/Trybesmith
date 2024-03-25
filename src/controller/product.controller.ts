@@ -9,6 +9,12 @@ async function insertProduct(req: Request, res: Response): Promise<Response> {
   return res.status(statusCode(status)).json(data);
 }
 
+async function getAll(_req: Request, res: Response): Promise<Response> {
+  const { data, status } = await productsService.getAll();
+  return res.status(statusCode(status)).json(data);
+}
+
 export default {
   insertProduct,
+  getAll,
 };
