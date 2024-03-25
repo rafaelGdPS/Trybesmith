@@ -1,8 +1,9 @@
-export type User = {
-  id: 'fake';
-  username: 'fake';
-  vocation: 'fake';
-  level: 'fake';
-  password: 'fake';
-  productIds: 'fake';
-};
+export type User = Omit<{
+  id: number;
+  username: string;
+  vocation: string;
+  level: number;
+  password: string;
+  productIds: number;
+}, 'productIds'
+>; 
