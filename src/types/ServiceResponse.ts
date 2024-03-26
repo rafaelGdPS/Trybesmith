@@ -1,8 +1,8 @@
-type ServiceResponseErrorType = 'INVALID' | 'NOT_FOUND' | 'UNAUTHORIZED';
+type ServiceResponseErrorType = 'INVALID_DATA' | 'NOT_FOUND' | 'UNAUTHORIZED';
 
 type ServiceResponseError = {
   status: ServiceResponseErrorType,
-  data: { message: 'Dados invalidos' }
+  data: { message: string }
 };
 
 type ServiceResponseSuccessful<T> = {

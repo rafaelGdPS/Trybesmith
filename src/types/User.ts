@@ -9,3 +9,10 @@ export type User = {
   products?: Product[]
   productIds?: { id: number }[];
 };
+
+export type Login = Pick<User, 'username' | 'password'>;
+export type Payload = Pick<User, 'id' | 'username'>;
+
+export type Token = {
+  token: string
+};

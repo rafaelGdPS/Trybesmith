@@ -1,9 +1,9 @@
 const mapHttp: Record<string, number> = { 
   SUCCESSFUL: 200,
   CREATED: 201,
-  INVALID: 400,
-  NOT_FOUND: 400,
-  UNAUTHORIZED: 400,
+  INVALID_DATA: 400,
+  NOT_FOUND: 404,
+  UNAUTHORIZED: 401,
 };
 
 export default function statusCode(statusText: string): number {
