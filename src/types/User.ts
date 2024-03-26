@@ -1,9 +1,11 @@
-export type User = Omit<{
+import { Product } from './Product';
+
+export type User = {
   id: number;
   username: string;
   vocation: string;
   level: number;
   password: string;
-  productIds: number;
-}, 'productIds'
->; 
+  products?: Product[]
+  productIds?: { id: number }[];
+};
